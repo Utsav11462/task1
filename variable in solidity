@@ -1,0 +1,34 @@
+// SPDX-License-Identifier: MIT
+pragma solidity >=0.8.7;
+contract Storage{
+
+   uint number;
+   bool ques;
+   string name;
+   int newnumber;
+    function setNumber(uint _number) public{
+          number = _number;
+    }
+    function getNumber() public view returns(uint) {
+       return number;
+    }
+
+    function setBOOL(bool _ques) public {
+        ques = _ques;
+    }
+    function getques() public view returns(bool){
+        return ques;
+    }
+    function setname(string memory _name) public {
+        name = _name;   
+    }
+    function getname() public view returns(string memory){
+        return name;
+    }
+    function setnewnumber(int _newnumber) public{
+        newnumber = _newnumber;
+    }
+    function getnewnumber() public view returns(int){
+        return newnumber;
+    }
+ }
